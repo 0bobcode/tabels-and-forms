@@ -9,12 +9,12 @@
 </head>
 
 <body>
-  <table border="5" cellspacing="5" cellpadding="5">
+  <table border="5" cellspacing="4" cellpadding="20">
     <tr>
       <th>misson</th>
       <th>launch date</th>
       <th>status</th>
-      
+
     </tr>
     <tr>
       <td>apolo 11</td>
@@ -45,9 +45,57 @@
       <td>1998</td>
       <td>operational</td>
     </tr>
-    
-    
+
+
+
   </table>
+  <br>
+  <br>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>personal information</legend>
+      <input type="text" id="firstname" name="firstname" placeholder="enter your first name" required>
+      <br><br>
+      <input type="text" id="lastname" name="lastname" placeholder="enter your last name" required>
+      <br><br>
+      <input type="email" id="email" name="email" placeholder="enter your email" required>
+      <br><br>
+      <input type="password" id="password" name="password" placeholder="enter your password" required>
+      <br><br>
+      <input type="number" id="age" name="age" placeholder="enter your age" required>
+      <br><br>
+      <input type="date" id="dob" name="dob" placeholder="enter your birthday" required>
+    </fieldset>
+    <br><br><br>
+    <fieldset>
+      <legend>gender</legend>
+      <label for="gender-male">male</label>
+      <input type="radio" id="gender-male" name="gender" value="male">
+      <label for="gendern-female">female</label>
+      <input type="radio" id="gender-female" name="gender" value="female">
+    </fieldset>
+    <br><br><br>
+    <fieldset>
+      <legend>intrests</legend>
+      <label for="subscribe-news">subscribe to newsletter</label>
+      <input type="checkbox" id="news" name="subscribe-news" value="newsletter">
+      <label for="intrest-math">mathematics</label>
+      <input type="checkbox" id="math" name="intrest-math" value="math">
+      <label for="intrest-science">science</label>
+      <input type="checkbox" id="science" name="intrest-science" value="science">
+    </fieldset>
+    <br><br><br>
+    <fieldset>
+      <legend>country</legend>
+      <label for="country">country:</label>
+      <select id="country" name="country" >
+       <option value="us">United States</option>
+       <option value="uk">United kingdom</option>
+        <option value="canada">Canada</option>
+     </select>
+    </fieldset>
+    <input type="submit" value="register">
+  </form>
   <script src="script.js"></script>
 </body>
 
